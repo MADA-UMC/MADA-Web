@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Tabs, Tab } from 'react-bootstrap';
 import styles from '../App.module.css';
+import CustomTabTable from './CustomTabTable';
 
 function CustomTab() {
     return (
@@ -9,7 +10,7 @@ function CustomTab() {
         id=""
         className="">
           <Tab eventKey="color" title="색깔">
-            Tab content for color
+    
           </Tab>
           <Tab eventKey="hat" title="모자">
             Tab content for hat
@@ -18,7 +19,7 @@ function CustomTab() {
          Tab content for item
           </Tab>
           <Tab eventKey="bg" title="배경">
-         Tab content for bg
+            <CustomTabTable />
           </Tab>
         </Tabs>
     );

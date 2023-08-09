@@ -16,13 +16,13 @@ import BackCinS from '../../img/customBg/back_cin_s.svg'
 import BackSpS from '../../img/customBg/back_sp_s.svg'
 import CustomLock from '../../img/customBg/Custom_lock.svg'
 
-
 function CustomTabTable() {
 
   const dispatch = useDispatch();
   const handleImageClick = (value) => {
     // 이미지를 클릭했을 때 값을 전달하는 액션
     dispatch(setValue(value));
+
   };
 
   return (
@@ -31,7 +31,7 @@ function CustomTabTable() {
         <tr>
           <td>1</td>
           <td>
-            <div>
+            <div className={styles.container}>
 		          <img src={BackBridS} onClick={() => 
                 handleImageClick('BackBridS')} 
                 style={{ cursor: 'pointer' }}
@@ -43,10 +43,11 @@ function CustomTabTable() {
               <img src={BackNS} onClick={() => 
                 handleImageClick('BackNS')} 
                 alt='BackNS' />
-                </div>
+            </div>
           </td>
         </tr>
       </thead>
+      
 
       <tbody>
         <tr>
@@ -56,17 +57,19 @@ function CustomTabTable() {
                 alt='BackWinS' />
            </td>
           <td>
-            <div className={styles.container} 
+            <div className={styles.container}
             onClick={() => handleImageClick('BackSpS')}>
                <img src={MADACBack} alt="BackSpS" className={styles.backgroundImage}/>
-              <img src={CustomLock} alt="Lock" className={styles.overlayImage}/>
+              <img src={CustomLock} alt="Lock" 
+              className={`${styles.overlayImage} ${styles.imagePosition} ${styles.size}`} />
             </div>
           </td>
           <td>
             <div className={styles.container} 
             onClick={() => handleImageClick('BackStoreS')}>
                <img src={BackStoreS} alt="BackStoreS" className={styles.backgroundImage}/>
-              <img src={CustomLock} alt="Lock" className={styles.overlayImage}/>
+              <img src={CustomLock} alt="Lock" 
+              className={`${styles.overlayImage} ${styles.imagePosition} ${styles.size}`}/>
             </div>
            </td>
         </tr>
@@ -76,21 +79,24 @@ function CustomTabTable() {
             <div className={styles.container} 
             onClick={() => handleImageClick('BackZzimS')}>
                <img src={BackZzimS} alt="BackZzimS" className={styles.backgroundImage}/>
-              <img src={CustomLock} alt="Lock" className={styles.overlayImage}/>
+              <img src={CustomLock} alt="Lock" 
+              className={`${styles.overlayImage} ${styles.imagePosition} ${styles.size}`}/>
             </div>
            </td>
           <td>
             <div className={styles.container} 
             onClick={() => handleImageClick('BackSpS')}>
               <img src={BackSpS} alt="BackSpS" className={styles.backgroundImage}/>
-              <img src={CustomLock} alt="Lock" className={styles.overlayImage}/>
+              <img src={CustomLock} alt="Lock" 
+              className={`${styles.overlayImage} ${styles.imagePosition} ${styles.size}`}/>
             </div>
           </td>
           <td>
             <div className={styles.container} 
             onClick={() => handleImageClick('BackCinS')}>
               <img src={BackCinS} alt="BackCinS" className={styles.backgroundImage}/>
-              <img src={CustomLock} alt="Lock" className={styles.overlayImage}/>
+              <img src={CustomLock} alt="Lock" 
+              className={`${styles.overlayImage} ${styles.imagePosition} ${styles.size}`}/>
             </div>
            </td>
         </tr>
@@ -100,11 +106,11 @@ function CustomTabTable() {
             <div className={styles.container} 
             onClick={() => handleImageClick('BackSrS')}>
               <img src={BackSrS} alt="BackSrS" className={styles.backgroundImage}/>
-              <img src={CustomLock} alt="Lock" className={styles.overlayImage}/>
+              <img src={CustomLock} alt="Lock" 
+              className={`${styles.overlayImage} ${styles.imagePosition} ${styles.size}`}/>
+
             </div>
           </td>
-          <td></td>
-          <td></td>
         </tr>
       </tbody>
     </Table>

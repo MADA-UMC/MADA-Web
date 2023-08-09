@@ -1,0 +1,1 @@
+export const SET_IMAGE_NAME = 'SET_IMAGE_NAME';

@@ -1,0 +1,1 @@
+svg import시 @svgr/webpack 설치하여 진행

@@ -1,0 +1,22 @@
+라이브러리
+
+create react app 사용
+react bootstrap 사용
+
+로그인 
+react cookie
+
+state 관리
+Redux 사용할 듯?
+
+react-spring
+
+axios 대신 
+react query (상태 관리)
+
+성능개선은 xX
+리덕스까지만
+
+테스팅코드
+
+브랜치 풀리퀘스트로
